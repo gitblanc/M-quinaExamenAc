@@ -225,3 +225,17 @@ git add .
 git commit -m "función"
 git push https://bitbucket.org/eduardoblancobielsa/2ac-pl4-uo285176/src/master/
 git push --set-upstream https://bitbucket.org/eduardoblancobielsa/2ac-pl4-uo285176/src/master/ master
+git push --set-upstream origin maste
+git init
+git add .
+git commit -m "funcion examen"
+git push --set-upstream origin maste
+git push --set-upstream origin master
+git push --set-upstream origin https://bitbucket.org/eduardoblancobielsa/2ac-pl4-uo285176/src/master/
+git push --set-upstream origin https://bitbucket.org/eduardoblancobielsa/2ac-pl4-uo285176
+git reset
+git add .
+git commit -m "funciones examen"
+git remote add origin https://github.com/gitblanc/M-quinaExamenAc
+git remote -v
+git push origin master

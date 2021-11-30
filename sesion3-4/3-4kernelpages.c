@@ -150,8 +150,11 @@ int main()
 		codeFrame, codeFlags,
 		dataFrame, dataFlags
 		bssFrame,  bssFlags */
-	<<Complete>>
 	
+	get_pte((void*)codePage << 12, &pte);
+	codeFrame = (pte & 0xFFFFF000 >> 12) + ((unsigned int)virtual_addr & 0x00000fff);
+	codeFlags = pte & 0x00000FFF
+
 	printf("\nKernel code page %05Xh ---> Frame: %05Xh; Flags: %03Xh\n", codePage, codeFrame, codeFlags);
 	printf("Kernel data page %05Xh ---> Frame: %05Xh; Flags: %03Xh\n", dataPage, dataFrame, dataFlags);	
 	printf("Kernel bss  page %05Xh ---> Frame: %05Xh; Flags: %03Xh\n\n", bssPage, bssFrame, bssFlags);	
