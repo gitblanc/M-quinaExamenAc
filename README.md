@@ -193,3 +193,12 @@ int main(void) {
 	return 0;
 }
 ```
+
+### Para la última parte: funciones extra...
+
+```
+#include <"libreria a usar">
+#include "3-4print-pte.h" <- incluir la funcion a usar
+print_virtual_physical_pte(print_virtual_physical_pte, "Function\n"
+                                                           "----------\n"); <- llamar a la función a usar
+```
